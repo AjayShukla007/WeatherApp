@@ -82,37 +82,37 @@ const FW = new Date(`${data.forecast.forecastday[2].date}`)
 
 if (`${data.current.condition.text}` == 'Mist') {
    bgv.innerHTML = `<video autoplay muted loop id="bgVideo">
-             <source src="/bgvideos/Mist_sky.mp4">
+             <source src="bgvideos/Mist_sky.mp4">
             Your browser does not support HTML5 video.
          </video>`;
 
 } else if (`${data.current.condition.text}` == 'Sunny' || `${data.current.condition.text}` == 'Clear') {
    bgv.innerHTML = `<video autoplay muted loop id="bgVideo">
-                <source src="/bgvideos/Sunny_sky.mp4">
+                <source src="bgvideos/Sunny_sky.mp4">
                Your browser does not support HTML5 video.
             </video>`;
 
 } else if (`${data.current.condition.text}` == 'Cloudy') {
    bgv.innerHTML = `<video autoplay muted loop id="bgVideo">
-                <source src="/bgvideos/Cloudy_sky.mp4">
+                <source src="bgvideos/Cloudy_sky.mp4">
                Your browser does not support HTML5 video.
             </video>`;
 
 } else if (`${data.current.condition.text}` == 'Partly cloudy' || `${data.current.condition.text}` == 'Overcast') {
    bgv.innerHTML = `<video autoplay muted loop id="bgVideo">
-                   <source src="/bgvideos/Partly_cloudy.mp4">
+                   <source src="bgvideos/Partly_cloudy.mp4">
                   Your browser does not support HTML5 video.
                </video>`;
 
 } else if (`${data.current.condition.text}` == 'Rainy' || `${data.current.condition.text}` == 'Storm' || `${data.current.condition.text}` == 'Heavy rain' || `${data.current.condition.text}` =='Light rain shower') {
    bgv.innerHTML = `<video autoplay muted loop id="bgVideo">
-                   <source src="/bgvideos/Rainy_sky.mp4">
+                   <source src="bgvideos/Rainy_sky.mp4">
                   Your browser does not support HTML5 video.
                </video>`;
 
 } else if (`${data.current.condition.text}` == 'Snow' || `${data.current.condition.text}` == 'Light snow' || `${data.current.condition.text}` == 'Heavy rain') {
    bgv.innerHTML = `<video autoplay muted loop id="bgVideo">
-                   <source src="/bgvideos/Snow_dog.mp4">
+                   <source src="bgvideos/Snow_dog.mp4">
                   Your browser does not support HTML5 video.
                </video>`;
 
@@ -421,7 +421,7 @@ form.addEventListener('submit', function(event) {
 })
 
 const getweatherP = async (cityP) => {
-   loading.innerHTML = `<h5 id=loadingscreen><img src='/images /Loading.gif'></h5>`;
+   loading.innerHTML = `<h5 id=loadingscreen><img src='images/Loading.gif'></h5>`;
    document.getElementById('greyloading').style.display = 'block'
     
    const urlP = `https://api.weatherapi.com/v1/forecast.json?key=7cb6833c4e99438b85640059221412&q=mumbai&days=7`;
@@ -457,37 +457,37 @@ const FWP = new Date(`${dataP.forecast.forecastday[2].date}`)
 
 if (`${dataP.current.condition.text}` == 'Mist') {
    bgv.innerHTML = `<video autoplay muted loop id="bgVideo">
-             <source src="/bgvideos/Mist_sky.mp4">
+             <source src="bgvideos/Mist_sky.mp4">
             Your browser does not support HTML5 video.
          </video>`;
    
 }else if (`${dataP.current.condition.text}` == 'Sunny' || `${dataP.current.condition.text}` == 'Clear') {
    bgv.innerHTML = `<video autoplay muted loop id="bgVideo">
-                <source src="/bgvideos/Sunny_sky.mp4">
+                <source src="bgvideos/Sunny_sky.mp4">
                Your browser does not support HTML5 video.
             </video>`;
    
 }else if (`${dataP.current.condition.text}` == 'Cloudy') {
    bgv.innerHTML = `<video autoplay muted loop id="bgVideo">
-                <source src="/bgvideos/Cloudy_sky.mp4">
+                <source src="bgvideos/Cloudy_sky.mp4">
                Your browser does not support HTML5 video.
             </video>`;
    
 }else if (`${dataP.current.condition.text}` == 'Partly cloudy' || `${dataP.current.condition.text}` == 'Overcast') {
    bgv.innerHTML = `<video autoplay muted loop id="bgVideo">
-                   <source src="/bgvideos/Partly_cloudy.mp4">
+                   <source src="bgvideos/Partly_cloudy.mp4">
                   Your browser does not support HTML5 video.
                </video>`;
    
 }else if (`${dataP.current.condition.text}` == 'Rainy' || `${dataP.current.condition.text}` == 'Storm' || `${dataP.current.condition.text}` == 'Heavy rain') {
    bgv.innerHTML = `<video autoplay muted loop id="bgVideo">
-                   <source src="/bgvideos/Cloudy_sky.mp4">
+                   <source src="bgvideos/Cloudy_sky.mp4">
                   Your browser does not support HTML5 video.
                </video>`;
    
 } else if (`${data.current.condition.text}` == 'Snow' || `${data.current.condition.text}` == 'Light snow' || `${data.current.condition.text}` == 'Heavy rain') {
    bgv.innerHTML = `<video autoplay muted loop id="bgVideo">
-                   <source src="/bgvideos/Snow_dog.mp4">
+                   <source src="bgvideos/Snow_dog.mp4">
                   Your browser does not support HTML5 video.
                </video>`;
 
