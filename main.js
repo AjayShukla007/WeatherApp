@@ -47,7 +47,7 @@ const getweather = async (city) => {
    loading.innerHTML = `<h5 id=loadingscreen><img src='images/Loading.gif'></h5>`;
    document.getElementById('greyloading').style.display = 'block'
     
-   const url = `http://api.weatherapi.com/v1/forecast.json?key=7cb6833c4e99438b85640059221412&q=${search.value}&days=7`;
+   const url = `https://api.weatherapi.com/v1/forecast.json?key=7cb6833c4e99438b85640059221412&q=${search.value}&days=7`;
    const response = await fetch(url);
    const data = await response.json();
    return showWeather(data);
@@ -424,7 +424,7 @@ const getweatherP = async (cityP) => {
    loading.innerHTML = `<h5 id=loadingscreen><img src='/images /Loading.gif'></h5>`;
    document.getElementById('greyloading').style.display = 'block'
     
-   const urlP = `http://api.weatherapi.com/v1/forecast.json?key=7cb6833c4e99438b85640059221412&q=mumbai&days=7`;
+   const urlP = `https://api.weatherapi.com/v1/forecast.json?key=7cb6833c4e99438b85640059221412&q=mumbai&days=7`;
    const responseP = await fetch(urlP);
    const dataP = await responseP.json();
    return showWeatherP(dataP);
