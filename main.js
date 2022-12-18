@@ -26,7 +26,7 @@ document.querySelector('body').onscroll = function() {
 
       // console.log('its working');
    }else{
-      document.body.style.background = 'black';
+      document.body.style.background = 'darkpurple';
       bgVideo.style.opacity = '1';
       document.querySelector('#cityname').style.fontSize = '2.3rem';
       document.querySelector('#cityname').style.borderBottom = 'none';
